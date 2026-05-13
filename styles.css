@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+/* =========================
+   CONTAINERS
+========================= */
+
+.horizontal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.border {
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 10px;
+    background: #1e293b;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    text-align: center;
+    background: #0f172a;
+    color: white;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #3b82f6;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+#start-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 22px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#start-button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+#valid-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 22px;
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#valid-button:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   GRILLE MOTUS
+========================= */
+
+.tentative-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tentative {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.lettre {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #334155;
+    background-color: #1e293b;
+    transition: 0.2s;
+}
+
+.lettre:empty::after {
+    content: ".";
+    color: #475569;
+}
+
+/* =========================
+   CLAVIER
+========================= */
+
+#clavier {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+.key {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.key:hover {
+    background-color: #334155;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   COULEURS MOTUS
+========================= */
+
+.absent {
+    background-color: #64748b !important;
+    color: white;
+}
+
+.present {
+    background-color: #eab308 !important;
+    color: black;
+}
+
+.correct {
+    background-color: #22c55e !important;
+    color: white;
+}
+
+/* =========================
+   ALERT
+========================= */
+
+#alert {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+
+#alert.error {
+    background-color: #ef4444;
+    color: white;
+}
+
+#alert.success {
+    background-color: #22c55e;
+    color: white;
+}
