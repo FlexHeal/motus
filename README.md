@@ -29,6 +29,9 @@ Après chaque essai :
 * 🟨 Une lettre jaune est présente mais mal placée
 * ⬛ Une lettre grise n’est pas dans le mot
 
+## Accès
+https://quentinhubert.fr/jeux/motus/
+
 ## Installation
 
 Clonez le dépôt :
